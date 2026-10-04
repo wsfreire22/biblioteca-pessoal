@@ -5,5 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minha Biblioteca</title>
   </head>
-  <body></body>
+  <body>
+
+    <header>
+      <h1>Minha Biblioteca</h1>
+      <p>Encontre em quais livros do meu acervo há referências sobre cada assunto.</p>
+     <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="#busca">Buscar</a></li>
+        <li><a href="#acervo">Acervo</a></li>
+      </ul>
+     </nav> 
+    </header>
+
+    <main>
+      
+      <section id="busca">
+        <h2>Buscar por assunto</h2>
+        <form>
+          <label for="campo-busca">Assunto</label>
+          <input type="search" id="campo-busca" name="assunto" placeholder=""Ex.: hidráulica, turbinas, Python">
+          <button type="submit">Buscar</button>      
+        </form>
+      </section>
+
+      <section id="acervo">
+        <h2>Meu acervo</h2>
+        <p>Os livros aparecerão aqui na próxima etapa.</p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Projeto de estudo em HTML e CSS - Winter</p>
+    </footer>
+
+  </body>
 </html>
