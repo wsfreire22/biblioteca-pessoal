@@ -7,6 +7,7 @@
   </head>
   <body>
 
+    <!-- Cabeçalho -->
     <header>
       <h1>Minha Biblioteca</h1>
       <p>Encontre em quais livros do meu acervo há referências sobre cada assunto.</p>
@@ -18,20 +19,94 @@
      </nav> 
     </header>
 
+    <!-- Conteúdo do site -->
     <main>
       
+      <!-- Seção de busca -->
       <section id="busca">
         <h2>Buscar por assunto</h2>
         <form>
           <label for="campo-busca">Assunto</label>
-          <input type="search" id="campo-busca" name="assunto" placeholder="Ex.: hidráulica, turbinas, Python">
+          <input type="search" id="campo-busca" name="assunto" placeholder="Ex.:hidráulica, turbinas etc">
           <button type="submit">Buscar</button>      
         </form>
       </section>
 
+      <!-- Seção do acervo -->  
       <section id="acervo">
         <h2>Meu acervo</h2>
-        <p>Os livros aparecerão aqui na próxima etapa.</p>
+        
+        <!-- Lista de livros -->
+        <ul class="lista-livros">
+          <li>
+            <article class="livro">
+              <h3>Introdução à Programação com Python</h3>
+              <dl>
+                <dt>Autor</dt>
+                <dd>Nilo Ney Coutinho Menezes</dd>
+              </dl>
+              <h4>Assuntos</h4>
+              <ul>
+                <li>Variáveis e entrada de dados</li>
+                <li>Condições</li>
+                <li>Repetições</li>
+                <li>Listas</li>
+                <li>Strings</li>
+                <li>Funções</li>
+                <li>Arquivos</li>
+                <li>Classes e objetos</li>
+                <li>Banco de dados</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="livro">
+              <h3>Python Essentials 1 - Beginner Course</h3>
+              <dl>
+                <dt>Autor</dt>
+                <dd>The OpenEDG Python Institute</dd>
+              </dl>
+              <h4>Assuntos</h4>
+              <ul>
+                <li>Data Types</li>
+                <li>Variables</li>
+                <li>Operators</li>
+                <li>Basic I/O Operations</li>
+                <li>Boolean Values</li>
+                <li>Conditional Execution</li>
+                <li>Loops</li>
+                <li>List and List Processing</li>
+                <li>Logical and Bitwise Operations</li>
+                <li>Tuples</li>
+                <li>Dictionaries</li>
+                <li>Exceptions</li>
+                <li>Data Processing</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="livro">
+              <h3>Controle Automático de Processos Industriais - Instrumentação</h3>
+              <dl>
+                <dt>Autor</dt>
+                <dd>Luciano Sighieri e Akiyoshi Nishinari</dd>
+              </dl>
+              <h4>Assuntos</h4>
+              <ul>
+                <li>Tomadas de impulso</li>
+                <li>Transmissores</li>
+                <li>Reguladores</li>
+                <li>Dispositivos de indicação e registração</li>
+                <li>Válvulas de regulação</li>
+                <li>Regualação automática</li>
+                <li>Dispositivos de segurança</li>
+              </ul>
+            </article>
+          </li>
+        </ul>
+
       </section>
 
     </main>
